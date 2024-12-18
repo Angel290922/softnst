@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Evensong Hollow';
+    src: url('URL-DE-FUENTE') format('truetype');
+}
+
+/* Aplica la fuente */
+.logo h1 {
+    font-family: 'Evensong Hollow', serif; /* Serif como respaldo */
+}
+
+
+.font-sn {
+    font-family: 'Evensong Hollow', serif;
+}
+
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #000000;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background: #000000;
+}
+
+.logo h1 {
+    font-size: 15rem;
+    margin: 0;
+    color: #FFD700;
+}
+
+.logo .letter-n {
+    color: #888;
+}
+
+.brand-name {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+	color: #FFFFFF;
+}
+
+.slogan {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+}
+
+nav {
+    background: #000000;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+
+
+/* Main Content */
+main {
+    padding: 2rem;
+    background: #000000;
+}
+
+main h2 {
+    color: #FFFFFF;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+main p {
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #000000;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .header {
+        height: auto; /* Permite que la altura sea dinámica */
+    }
+
+    .header h1 {
+        font-size: 2.5rem; /* Reduce el tamaño del texto */
+    }
+
+    .gallery {
+        flex-wrap: wrap; /* Permite que las imágenes se acomoden en varias filas */
+        gap: 1rem;
+    }
+
+    .gallery img {
+        width: 100%; /* Ajusta las imágenes al ancho disponible */
+        height: auto; /* Mantén la proporción */
+    }
+
+    .map-container {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        text-align: center;
+    }
+
+    .map iframe {
+        max-width: 100%; /* Asegura que el mapa se ajuste a la pantalla */
+        height: 250px; /* Reduce la altura en pantallas pequeñas */
+    }
+
+    .navigation ul {
+        flex-direction: column; /* Cambia el menú a una columna */
+        gap: 1rem; /* Espaciado entre los elementos */
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* Ajusta a una sola columna */
+    }
+
+    .footer {
+        font-size: 0.8rem; /* Reduce el tamaño del texto */
+        padding: 0.5rem;
+    }
+}
